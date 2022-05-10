@@ -24,7 +24,12 @@ repositories {
     mavenCentral()
 }
 
-dependencies { //.gradle 에 있는 버전과 다운받은 버전이 일치 해야함 7이상은 implementation 사용
+dependencies { // .gradle 에 있는 버전과 다운받은 버전이 일치 해야함 7이상은 implementation 사용
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    // lombok 사용할때 error: variable name not initialized in the default constructor 가 나타난다면 해당 compile 추가
+    testImplementation ('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok')
+    testAnnotationProcessor('org.projectlombok:lombok')
 }
