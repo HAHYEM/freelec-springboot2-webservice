@@ -29,6 +29,7 @@ dependencies { // .gradle 에 있는 버전과 다운받은 버전이 일치 해
     implementation('org.projectlombok:lombok')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')// 스프링 부트용 Spring Data Jpa 추상화 라이브러리
     implementation('com.h2database:h2')// 인메로리 관계형 데이터베이스
+    implementation('org.springframework.boot:spring-boot-starter-mustache')// 머스테치 스타터 의존성
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     // lombok 사용할때 error: variable name not initialized in the default constructor 가 나타난다면 해당 compile 추가
     testImplementation ('org.projectlombok:lombok')
